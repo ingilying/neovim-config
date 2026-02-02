@@ -42,7 +42,6 @@ vim.diagnostic.config {
     virtual_text = {
         source = "if_many",
         spacing = 2,
-        severity = vim.diagnostic.severity.ERROR,
         format = function(diagnostic)
             local diagnostic_message = {
                 [vim.diagnostic.severity.ERROR] = diagnostic.message,
